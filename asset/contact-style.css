@@ -1,0 +1,61 @@
+/* CONTACT PAGE STYLE */
+.contact-page{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+}
+.container-contact{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.container-contact h1{
+    font-size: 60px;
+}
+.container-contact .container-sosmed{
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-items: center;
+}
+.container-sosmed .sosmed-list{
+    width: 120px;
+    height: 100px;
+    /* margin-top: 20px; */
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sosmed-list img{
+    width: 35%;
+    height: 35%;
+}
+.sosmed-list .sosmed-detail{
+    width: 100%;
+    height: 100px;
+    transition: 200ms ease;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sosmed-detail .line{
+    height: 2px;
+    width: 70%;
+    background-color: #080714;
+    margin-top: 10px;
+}
+.sosmed-detail a{
+    font-size: 12px;
+    color: #080714;
+    text-align: center;
+    margin-top: 12px;
+    font-weight: bold;
+}
+.sosmed-list:hover .sosmed-detail{
+    visibility: visible;
+}
