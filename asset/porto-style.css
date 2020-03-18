@@ -1,0 +1,61 @@
+/* PORTO STYLE */
+.portfolio-page{
+    width: 100%;
+    margin-top: 70px;
+    background-color: #fff;
+}
+.margin-porto-page{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px;
+}
+.margin-porto-page h1{
+    color: #080714;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 50px;
+}
+.line{
+    width: 300px;
+    height: 3px;
+    background-color: #080714;
+    margin: 80px auto ;
+}
+.margin-porto-page .container-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container-image .image{
+    flex: 25%;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.container-image .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.container-image .image:hover img{
+    transform: scale(1.2);
+    transition: 1s;
+
+}
+@media screen and (max-width:960px){
+    .container-image .image{
+        flex: 33.3%;
+    }
+}
+@media screen and (max-width:768px){
+    .container-image .image{
+        flex: 50%;
+    }
+}
+@media screen and (max-width:480px){
+    .container-image .image{
+        flex: 100%;
+    }
+}
