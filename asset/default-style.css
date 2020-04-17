@@ -15,6 +15,7 @@ a {
   text-decoration: none;
 }
 
+
 /* Navbar */
 .main-navbar {
   width: 100%;
@@ -62,7 +63,6 @@ a {
 }
 .menu {
   display: flex;
-  flex-direction: row;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -85,6 +85,14 @@ a {
   font-weight: 350;
   color: #707070;
 }
+.nav-tittle.active{
+  font-weight: 600;
+  color: #080714;
+}
+.icon{
+  display: none;
+  color: #080714;
+}
 
 /* Footer */
 .footer-section {
@@ -100,4 +108,52 @@ a {
     color: #fff7f5;
     font-size: 14px;
     font-weight: 100;
+}
+
+@media screen and (max-width: 850px){
+  .main-navbar{
+    min-height: 65px;
+  }
+  .container-navbar {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .container-navbar img{
+    margin-right: 10px;
+    width: 35px;
+  }
+  .tittle-web {
+    font-size: 16px;
+  }
+  .navbar-menu{
+    display: none;
+  }
+  .nav-menu-list{
+    display: none;
+  }
+  .navbar-menu.responsive{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+  }
+  .icon{
+    display: flex;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  .navbar-menu.responsive .menu{
+    display: block;
+    text-align: center;
+  }
+  .navbar-menu.responsive .nav-menu-list{
+    display: block;
+    margin: 40px;
+  }
+  .navbar-menu.responsive .nav-tittle {
+    font-size: 12px;
+  }
 }

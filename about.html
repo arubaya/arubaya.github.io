@@ -1,61 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website si Tupi</title>
     <!-- CSS Eksternal -->
-    <link rel="stylesheet" href="/asset/default-style.css" />
-    <link rel="stylesheet" href="/asset/about-style.css">
-    <link rel="icon" href="/asset/Logo.png">
-</head>
-<body>
+    <link rel="stylesheet" href="asset/default-style.css" />
+    <link rel="stylesheet" href="asset/about-style.css" />
+    <link rel="icon" href="asset/Logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
     <!-- Navbar start -->
     <nav class="main-navbar">
-        <div class="container-navbar">
-          <img src="/asset/situpi-logo.svg" alt="">
-          <a class="tittle-web" href="index.html">Si Tupi</a>
-          <div class="navbar-menu">
-            <ul class="menu">
-                <li class="nav-menu-list">
-                  <a class="nav-tittle" href="/index.html">Home</a>
-                </li>
-                <li class="nav-menu-list">
-                  <a class="nav-tittle" href="/porto.html" >Portfolio</a>
-                </li>
-                <li class="nav-menu-list">
-                  <a class="nav-tittle" href="/about.html" style="font-weight: 600; color: #080714;">About</a>
-                </li>
-                <li class="nav-menu-list">
-                  <a class="nav-tittle" href="/contact.html">Contact</a>
-                </li>
-              </ul>
-          </div>
+      <div class="container-navbar">
+        <img src="asset/situpi-logo.svg" alt="" />
+        <a class="tittle-web" href="index.html">Si Tupi</a>
+        <div class="navbar-menu" id="navMenu">
+          <ul class="menu">
+            <li class="nav-menu-list">
+              <a class="nav-tittle" href="index.html">Home</a>
+            </li>
+            <li class="nav-menu-list">
+              <a class="nav-tittle" href="porto.html">Portfolio</a>
+            </li>
+            <li class="nav-menu-list">
+              <a class="nav-tittle" href="porto.html">Blog</a>
+            </li>
+            <li class="nav-menu-list">
+              <a class="nav-tittle active" href="about.html">About</a>
+            </li>
+            <li class="nav-menu-list">
+              <a class="nav-tittle" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!-- Navbar End -->
-
-      <!-- About Start -->
-      <div class="profile-section">
-        <div class="margin-container-hey">
-          <div class="container-hey">
-            <h1>Hey,</h1>
-            <div class="container-hey-2">
-              <h2>I'm Tsabit Arubaya</h2>
-              <p>I am a man born on April 7, 2000 and with Indonesian citizenship. you can find me at jl. Kanguru Sidomulyo, Tegalgede, Karanganyar, Jawa Tengah</p>
-            </div>
-          </div>
-        </div>
-        <img src="/asset/photos-of-me.jpg" alt="">
+        <a href="javascript:void(0);" class="icon" onclick="responsNav()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-      <!-- About End -->
+    </nav>
+    <!-- Navbar End -->
 
-      <!-- Footer Start -->
+    <!-- About Start -->
+    <div class="profile-section">
+      <div class="margin-container-hey">
+        <div class="container-hey">
+          <h1>Hey,</h1>
+          <div class="container-hey-2">
+            <h2>I'm Tsabit Arubaya</h2>
+            <p>
+              I am a man born on April 7, 2000 and with Indonesian citizenship.
+              you can find me at jl. Kanguru Sidomulyo, Tegalgede, Karanganyar,
+              Jawa Tengah
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="asset/photos-of-me.jpg" alt="" />
+    </div>
+    <!-- About End -->
+
+    <!-- Footer Start -->
     <div class="footer-section">
-        <div class="container-footer">
-          <p>Copyright 2020. Si Tupi</p>
-        </div>
+      <div class="container-footer">
+        <p>Copyright 2020. Si Tupi</p>
       </div>
-      <!-- Footer End -->
-</body>
+    </div>
+    <!-- Footer End -->
+    <!-- Script Start -->
+    <script src="functions.js"></script>
+    <!-- Script End -->
+  </body>
 </html>
